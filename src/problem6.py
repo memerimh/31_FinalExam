@@ -2,8 +2,8 @@
 Final exam, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Mattias Memering.
+"""  # TOO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -74,6 +74,19 @@ And this one for n=14:
 
     :type n: int
     """
+    for k in range(n):
+        leftside = ""
+        for b in range(n-1-k):
+            leftside = leftside + " "
+        for b in range(k+1):
+            leftside = leftside + str((b+1) % 10)
+        rightside = ""
+        for b in range(k+2):
+            rightside = rightside + "*"
+        for b in range(n-k):
+            rightside = rightside + str((14-k-b-1)%10)
+        print(leftside+rightside)
+
     # ------------------------------------------------------------------
     # TODO: Implement and test this function.
     #          Some tests are already written for you (above).
