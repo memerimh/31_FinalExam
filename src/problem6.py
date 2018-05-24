@@ -76,16 +76,16 @@ And this one for n=14:
     """
     for k in range(n):
         leftside = ""
-        for b in range(n-1-k):
+        for b in range(n - 1 - k):
             leftside = leftside + " "
-        for b in range(k+1):
-            leftside = leftside + str((b+1) % 10)
+        for b in range(k + 1):
+            leftside = leftside + str((b + 1) % 10)
         rightside = ""
-        for b in range(k+2):
+        for b in range(k + 2):
             rightside = rightside + "*"
-        for b in range(n-k):
-            rightside = rightside + str((14-k-b-1)%10)
-        print(leftside+rightside)
+        for b in range(n - k):
+            rightside = rightside + str((14 - k - b - 1) % 10)
+        print(leftside + rightside)
 
     # ------------------------------------------------------------------
     # TODO: Implement and test this function.

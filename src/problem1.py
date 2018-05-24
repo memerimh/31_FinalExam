@@ -91,8 +91,8 @@ def problem1a(numbers):
     """
     sum = 0
     sum = sum + numbers[0]
-    sum = sum + numbers[len(numbers)-1]
-    sum = sum + numbers[(len(numbers)//2)]
+    sum = sum + numbers[len(numbers) - 1]
+    sum = sum + numbers[(len(numbers) // 2)]
     return sum
     # -------------------------------------------------------------------------
     # TOO: 2. Implement and test this function.
@@ -171,8 +171,8 @@ def problem1b(numbers):
       :type numbers:  [int]
     """
     sum = 0
-    for k in range(len(numbers)//3):
-        sum = sum + numbers[k+len(numbers)//3]
+    for k in range(len(numbers) // 3):
+        sum = sum + numbers[k + len(numbers) // 3]
     return sum
     # -------------------------------------------------------------------------
     # TDO: 3. Implement and test this function.

@@ -136,8 +136,8 @@ def problem5(m, numbers1, numbers2):
       :type [str]
     """
     answer = []
-    for k in range(len(numbers1)-1):
-        if numbers1[k]*m == numbers2[k] :
+    for k in range(len(numbers1) - 1):
+        if numbers1[k] * m == numbers2[k]:
             answer = answer + [numbers1[k]]
             answer = answer + [numbers2[k]]
             break

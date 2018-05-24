@@ -73,7 +73,7 @@ class Pig(object):
           -- eat 365 pounds of slop.
         """
         for k in range(364):
-            self.eat(k+1)
+            self.eat(k + 1)
         # TOO: Implement and test this method.
 
     def heavier_pig(self, other_pig):
@@ -94,7 +94,7 @@ class Pig(object):
         """
         heavy = self.heavier_pig(other_pig)
         newpig = Pig(heavy.get_weight())
-        return(newpig)
+        return (newpig)
         # ODO: Implement and test this method.
 
 

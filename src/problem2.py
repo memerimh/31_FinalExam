@@ -176,7 +176,7 @@ def problem2a(x, sequence):
     return newnumbers
 
     # -------------------------------------------------------------------------
-    #ODO: 2. Implement and test this function.
+    # ODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
@@ -236,8 +236,8 @@ def run_test_problem2b():
 
     # SUMMARY of the test results:
     print_summary_of_test_results(test_results)
-    
-    
+
+
 def problem2b(sequence):
     """
     What comes in:
@@ -377,8 +377,8 @@ def run_test_problem2c():
 
     # SUMMARY of the test results:
     print_summary_of_test_results(test_results)
-    
-    
+
+
 def problem2c(x):
     """
     What comes in:  An integer  x  that is at least 2.
