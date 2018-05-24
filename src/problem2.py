@@ -2,9 +2,9 @@
 Final exam, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Mattias Memering.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DoneO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -19,9 +19,9 @@ def main():
     print()
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
-    # run_test_problem2a()
-    # run_test_problem2b()
-    # run_test_problem2c()
+    run_test_problem2a()
+    run_test_problem2b()
+    run_test_problem2c()
 
 
 def is_prime(n):
@@ -169,8 +169,14 @@ def problem2a(x, sequence):
       :type x:    int
       :type sequence:  [int]
     """
+    newnumbers = []
+    for k in range(len(sequence)):
+        if sequence[k] > x:
+            newnumbers = newnumbers + [sequence[k]]
+    return newnumbers
+
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    #ODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
@@ -249,8 +255,13 @@ def problem2b(sequence):
     Type hints:
       :type sequence  [int]
     """
+    largest = 0
+    for k in range(len(sequence)):
+        if abs(sequence[k]) > abs(sequence[largest]):
+            largest = k
+    return largest
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # TOO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
@@ -392,8 +403,16 @@ def problem2c(x):
     Type hints:
       :type x:    int
     """
+    number = x
+    while True:
+        if is_prime(number):
+            if is_prime(sum_of_digits(number)):
+                break
+        number = number + 1
+    return number
+
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # TOD: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
